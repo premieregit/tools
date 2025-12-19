@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferramentas</title>
+    <style>
+      :root {
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        color-scheme: light dark;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at top, #e0f2fe, #eff6ff 45%, #f8fafc);
+        color: #0f172a;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+        padding: 32px;
+        border-radius: 16px;
+        width: min(460px, 90vw);
+        text-align: center;
+        backdrop-filter: blur(8px);
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 26px;
+        letter-spacing: -0.02em;
+      }
+
+      p {
+        margin: 0 0 20px;
+        color: #334155;
+        font-size: 15px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 18px;
+        border-radius: 12px;
+        border: 1px solid transparent;
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 12px 30px rgba(99, 102, 241, 0.35);
+        transition: transform 0.12s ease, box-shadow 0.12s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 16px 36px rgba(99, 102, 241, 0.4);
+      }
+
+      .btn:active {
+        transform: translateY(1px);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Ferramentas</h1>
+      <p>Escolha uma ferramenta para abrir.</p>
+      <div style="display: grid; gap: 12px; justify-items: center">
+        <a class="btn" href="./calculadora/">Abrir calculadora de Story Points</a>
+        <a class="btn" href="./links/">Abrir página de links úteis</a>
+      </div>
+    </main>
+  </body>
+</html>
